@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order of Ghost Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Order Of Ghost Shop</div>
+    
+    <!-- Nav links - icon chỉ hiển thị trên mobile -->
+    <nav class="nav-links" id="nav-links">
+      <a href="#home"><span class="icon">🏠</span><span class="label">Trang</span></a>
+      <a href="#products"><span class="icon">🎁</span><span class="label">Sản phẩm</span></a>
+      <a href="#pricing"><span class="icon">💰</span><span class="label">Giá</span></a>
+      <a href="#contact"><span class="icon">📩</span><span class="label">Liên hệ</span></a>
+    </nav>
+  </header>
+
+  <!-- Welcome with 4 Parallax Layers -->
+  <section id="home" class="section welcome">
+    <div class="parallax layer1"></div>
+    <div class="parallax layer2"></div>
+    <div class="parallax layer3"></div>
+    <div class="parallax layer4"></div>
+    <div class="welcome-content">
+      <h1>Order of Ghost</h1>
+      <h4>Shop tài khoản bản quyền</h2>
+      <p>ChatGPT, Netflix, Spotify, YouTube Premium...</p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="section">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>ChatGPT Plus</h3>
+        <p>Truy cập AI mạnh mẽ</p>
+        <button onclick="openModal('ChatGPT Plus – 450K/tháng')">Mua ngay</button>
+      </div>
+      <div class="product-card">
+        <h3>YouTube Premium</h3>
+        <p>Không quảng cáo, tải offline</p>
+        <button onclick="openModal('YouTube Premium – 180K/6 tháng')">Mua ngay</button>
+      </div>
+      <div class="product-card">
+        <h3>Spotify Premium</h3>
+        <p>Nghe nhạc không giới hạn</p>
+        <button onclick="openModal('Spotify Premium – 350K/năm')">Mua ngay</button>
+      </div>
+      <div class="product-card">
+        <h3>Netflix</h3>
+        <p>Kho phim cá nhân hóa</p>
+        <button onclick="openModal('Netflix – 75K/tháng')">Mua ngay</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section secondary">
+    <h2>Bảng giá tổng hợp</h2>
+    <ul>
+      <li>🔹 ChatGPT Plus – 450K / tháng</li>
+      <li>🔹 YouTube Premium – 180K / 6 tháng | 300K / 1 năm</li>
+      <li>🔹 Netflix – 75K / tháng</li>
+      <li>🔹 Spotify Premium – 350K / năm</li>
+      <li>🔹 Super Duolingo – 250K / năm</li>
+      <li>🔹 CapCut Pro – 750K / năm</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Liên hệ đặt hàng</h2>
+    <p>Inbox fanpage hoặc Zalo để được tư vấn nhanh nhất.</p>
+    <a href="https://zalo.me" class="contact-button">Liên hệ ngay</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Order of Ghost – Shop bán tài khoản bản quyền
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>Xác nhận mua hàng</h3>
+      <p id="product-name"></p>
+      <a href="https://zalo.me" class="contact-button">Inbox Zalo</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
